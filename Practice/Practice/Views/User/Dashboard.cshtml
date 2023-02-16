@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Dashboard</h2>
+
+
+@if (TempData["Msg"] != null)
+{
+    <h4 class="alert alert-success">@TempData["Msg"]</h4>
+}
+
+<h2>This is profile of Khurshed Alam Sifat</h2>
