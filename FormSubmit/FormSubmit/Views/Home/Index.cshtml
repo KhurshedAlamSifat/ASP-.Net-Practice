@@ -24,3 +24,17 @@
         <input type="submit" value="Register" class="btn btn-success" />
     </form>
 </div>
+<div>
+    @if (Model != null)
+    {
+        <h4>@Model.Name</h4>
+        <h4>@Model.Id</h4>
+        <h4>@Model.Gender</h4>
+        <h4>@Model.Profession</h4>
+        <p>@foreach (var item in @Model.Hobbies)
+           {@item}</p>
+        <h4>@Model.Dob</h4>
+
+    }
+
+</div>

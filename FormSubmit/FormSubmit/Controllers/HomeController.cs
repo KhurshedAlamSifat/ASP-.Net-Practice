@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormSubmit.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +9,15 @@ namespace FormSubmit.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
+        }
+        [HttpPost]
+        public ActionResult Index(RegSubmit submit) 
+        {
+            return View(submit);
         }
 
         public ActionResult About()
