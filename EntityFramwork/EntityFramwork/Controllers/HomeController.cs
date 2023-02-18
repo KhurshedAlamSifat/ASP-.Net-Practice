@@ -31,6 +31,40 @@ namespace EntityFramwork.Controllers
             var peoples=db.People.ToList();
             return View(peoples);
         }
+        public ActionResult Details(int id)
+        {
+            var db = new DOTNETEntities2();
+            var st = (from s in db.People
+                      where s.id == id
+                      select s).SingleOrDefault();
+            return View(st);
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var db = new DOTNETEntities2();
+            var st = (from s in db.People
+                      where s.id == id
+                      select s).SingleOrDefault();
+            return View(st);
+        }
+        [HttpPost]
+        public ActionResult Edit(Person model)
+        {
+            var db = new DOTNETEntities2();
+            var exst = (from s in db.People
+                        where s.id == model.id
+                        select s).SingleOrDefault();
+            /*exst.Name = model.Name;
+            exst.Profession = model.Profession;
+            exst.Gender = model.Gender;
+            exst.Dob = model.Dob;*/
+            db.Entry(exst).CurrentValues.SetValues(model);
+            //db.Students.Remove(exst);
+            db.SaveChanges();
+            return RedirectToAction("List");
+        }
 
         public ActionResult About()
         {
