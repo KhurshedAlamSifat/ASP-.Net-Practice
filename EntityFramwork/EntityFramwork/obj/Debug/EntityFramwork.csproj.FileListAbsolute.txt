@@ -77,3 +77,7 @@ C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFra
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\obj\Debug\EntityFramwork.csproj.CopyComplete
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\obj\Debug\EntityFramwork.dll
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\obj\Debug\EntityFramwork.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\bin\EntityFramework.dll
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\bin\EntityFramework.SqlServer.dll
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\bin\EntityFramework.xml
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\EntityFramwork\EntityFramwork\bin\EntityFramework.SqlServer.xml
