@@ -3,5 +3,15 @@
     ViewBag.Title = "Order";
 }
 
-Name: @Model.o_id <br />
-<a href="/Home/Orderdetails/@Model.o_id">See Order details</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Order ID</th>
+        <th>Order Date</th>
+    </tr>
+
+    <tr>
+        <td>@Model.id</td>
+        <td>@Model.order_date</td>
+        <td><a href="/Home/Product/@Model.id">Product Details</a></td>
+    </tr>
+</table>

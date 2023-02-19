@@ -34,18 +34,12 @@ namespace LabTask.Controllers
         {
             var db = new TASKEntities2();
             var st = (from s in db.UserOrders
-                      where s.u_id == id
-                      select s).SingleOrDefault();
+                      from s2 in db.Orders
+                      where s.u_id == id && s2.id == s.o_id
+                      select s2).SingleOrDefault();
             return View(st);
         }
-        public ActionResult Orderdetails(int id) 
-        {
-            var db = new TASKEntities2();
-            var st = (from s in db.Orders
-                      where s.id == id
-                      select s).SingleOrDefault();
-            return View(st);
-        }
+
         [HttpGet]
         public ActionResult Edit(int id)
         {
@@ -71,8 +65,16 @@ namespace LabTask.Controllers
             db.SaveChanges();
             return RedirectToAction("List");
         }
-
-        public ActionResult Delete(int id)
+        public ActionResult Product(int id)
+        {
+            var db = new TASKEntities2();
+            var st = (from s in db.Products
+                      from s2 in db.OrderProducts
+                      where s2.o_id == id && s.id == s2.p_id
+                      select s).SingleOrDefault();
+            return View(st);
+        }
+        /*public ActionResult Delete(int id)
         {
             var db = new TASKEntities2();
             var st = (from s in db.Orders
@@ -81,7 +83,7 @@ namespace LabTask.Controllers
             db.Orders.Remove(st);
             db.SaveChanges();
             return RedirectToAction("List");
-        }
+        }*/
 
         public ActionResult About()
         {
