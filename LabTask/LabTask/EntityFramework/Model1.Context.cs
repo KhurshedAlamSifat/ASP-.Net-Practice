@@ -13,10 +13,10 @@ namespace LabTask.EntityFramework
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TASKEntities : DbContext
+    public partial class TASKEntities2 : DbContext
     {
-        public TASKEntities()
-            : base("name=TASKEntities")
+        public TASKEntities2()
+            : base("name=TASKEntities2")
         {
         }
     
@@ -29,6 +29,7 @@ namespace LabTask.EntityFramework
         public virtual DbSet<OrderProduct> OrderProducts { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<UserOrder> UserOrders { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }

@@ -23,7 +23,6 @@ namespace LabTask.EntityFramework
     
         public int id { get; set; }
         public System.DateTime order_date { get; set; }
-        public int product_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderProduct> OrderProducts { get; set; }
