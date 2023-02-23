@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h2>Send Email</h2><hr />
+@if(ViewBag.Msg != null)
+            {
+                <div class=" alert alert-success">@ViewBag.Msg</div>
+            }
+@using (Html.BeginForm()) 
+ {
+    <div class="input-group col-md-3">
+        <input type="email" name="useremail" class="form-control" />
+        <div class="input-group-btn">
+            <button class="btn btn-success" type="submit">
+                <i class="glyphicon glyphicon-send"></i>
+            </button>
+        </div>
+    </div>
+ }
+<hr />

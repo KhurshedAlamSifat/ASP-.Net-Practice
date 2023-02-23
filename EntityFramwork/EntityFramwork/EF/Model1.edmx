@@ -33,7 +33,7 @@
           <Property Name="profession" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dob" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="DOTNETEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DOTNETEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="People" EntityType="Self.Person" />
         </EntityContainer>
       </Schema>
@@ -41,7 +41,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DOTNETModelStoreContainer" CdmEntityContainer="DOTNETEntities2">
+        <EntityContainerMapping StorageEntityContainer="DOTNETModelStoreContainer" CdmEntityContainer="DOTNETEntities3">
           <EntitySetMapping Name="People">
             <EntityTypeMapping TypeName="DOTNETModel.Person">
               <MappingFragment StoreEntitySet="People">

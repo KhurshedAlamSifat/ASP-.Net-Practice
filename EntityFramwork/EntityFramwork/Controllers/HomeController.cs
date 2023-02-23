@@ -19,21 +19,21 @@ namespace EntityFramwork.Controllers
         [HttpPost]
         public ActionResult Index(Person model) 
         {
-            var db = new DOTNETEntities2();
-            db.People.Add(model);
+            var db = new DOTNETEntities3();
+            db.People.Add(model);   
             db.SaveChanges();
             return RedirectToAction("List");
         }
 
         public ActionResult List()
         {
-            var db = new DOTNETEntities2();
+            var db = new DOTNETEntities3();
             var peoples=db.People.ToList();
             return View(peoples);
         }
         public ActionResult Details(int id)
         {
-            var db = new DOTNETEntities2();
+            var db = new DOTNETEntities3();
             var st = (from s in db.People
                       where s.id == id
                       select s).SingleOrDefault();
@@ -43,7 +43,7 @@ namespace EntityFramwork.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var db = new DOTNETEntities2();
+            var db = new DOTNETEntities3();
             var st = (from s in db.People
                       where s.id == id
                       select s).SingleOrDefault();
@@ -52,7 +52,7 @@ namespace EntityFramwork.Controllers
         [HttpPost]
         public ActionResult Edit(Person model)
         {
-            var db = new DOTNETEntities2();
+            var db = new DOTNETEntities3();
             var exst = (from s in db.People
                         where s.id == model.id
                         select s).SingleOrDefault();

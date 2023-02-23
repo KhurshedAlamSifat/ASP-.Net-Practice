@@ -13,10 +13,10 @@ namespace EntityFramwork.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DOTNETEntities2 : DbContext
+    public partial class DOTNETEntities3 : DbContext
     {
-        public DOTNETEntities2()
-            : base("name=DOTNETEntities2")
+        public DOTNETEntities3()
+            : base("name=DOTNETEntities3")
         {
         }
     
