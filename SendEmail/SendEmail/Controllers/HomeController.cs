@@ -18,6 +18,7 @@ namespace SendEmail.Controllers
             string body = "Hello Mr." +
                 "We would love to welcome you in Our Mollas Fuel." +
                 "Thanks for Sign UP!";
+            
             WebMail.Send(useremail, subject, body, null, null, null, true, null, null, null, null, null, null);
             ViewBag.Msg = "Email Send Successfully!";
             return View();
