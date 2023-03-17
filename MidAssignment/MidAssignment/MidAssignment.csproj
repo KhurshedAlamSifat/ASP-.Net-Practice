@@ -129,26 +129,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="EF\Models\Employee.cs" />
+    <Compile Include="EF\Models\RestaurantEmployee.cs" />
     <Compile Include="EF\Models\Restaurant.cs" />
     <Compile Include="EF\NGO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303161817059_RestaurantTable.cs" />
-    <Compile Include="Migrations\202303161817059_RestaurantTable.designer.cs">
-      <DependentUpon>202303161817059_RestaurantTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202303161844213_EmployeeTableAdded.cs" />
-    <Compile Include="Migrations\202303161844213_EmployeeTableAdded.designer.cs">
-      <DependentUpon>202303161844213_EmployeeTableAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202303161846527_EmployeeTableAdded11.cs" />
-    <Compile Include="Migrations\202303161846527_EmployeeTableAdded11.designer.cs">
-      <DependentUpon>202303161846527_EmployeeTableAdded11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202303161857403_relation.cs" />
-    <Compile Include="Migrations\202303161857403_relation.designer.cs">
-      <DependentUpon>202303161857403_relation.cs</DependentUpon>
+    <Compile Include="Migrations\202303170600553_RelationUpdate2.cs" />
+    <Compile Include="Migrations\202303170600553_RelationUpdate2.designer.cs">
+      <DependentUpon>202303170600553_RelationUpdate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -207,17 +196,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303161817059_RestaurantTable.resx">
-      <DependentUpon>202303161817059_RestaurantTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303161844213_EmployeeTableAdded.resx">
-      <DependentUpon>202303161844213_EmployeeTableAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303161846527_EmployeeTableAdded11.resx">
-      <DependentUpon>202303161846527_EmployeeTableAdded11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202303161857403_relation.resx">
-      <DependentUpon>202303161857403_relation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303170600553_RelationUpdate2.resx">
+      <DependentUpon>202303170600553_RelationUpdate2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

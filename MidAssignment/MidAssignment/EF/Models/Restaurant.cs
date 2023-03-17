@@ -16,12 +16,12 @@ namespace MidAssignment.EF.Models
         public string Name { get; set; }
         [Required]
         public string Location { get; set; }
-        [ForeignKey("Employee")]
-        public virtual ICollection<Employee> Employees { get; set;}
+
+        public virtual ICollection<RestaurantEmployee> RestaurantEmployees { get; set;}
 
         public Restaurant()
         {
-            Employees = new List<Employee>();
+            RestaurantEmployees = new List<RestaurantEmployee>();
         }
 
     }

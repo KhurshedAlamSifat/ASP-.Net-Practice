@@ -24,13 +24,12 @@ namespace MidAssignment.EF.Models
         public DateTime Dob { get; set; }
         [Required]
         public string Password { get; set; }
-        [ForeignKey("Restaurant")]
 
-        public virtual ICollection<Restaurant> Restaurants { get; set;}
+        public virtual ICollection<RestaurantEmployee> RestaurantEmployees { get; set; }
 
         public Employee()
         {
-            Restaurants= new List<Restaurant>();
+            RestaurantEmployees= new List<RestaurantEmployee>();
         }
 
     }

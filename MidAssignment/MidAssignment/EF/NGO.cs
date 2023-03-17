@@ -11,5 +11,6 @@ namespace MidAssignment.EF
     {
         public DbSet<Restaurant> Restaurants { get; set;}
         public DbSet<Employee> Employees { get; set;}
+        public DbSet<RestaurantEmployee> RestaurantEmployees { get; set;}
     }
 }
