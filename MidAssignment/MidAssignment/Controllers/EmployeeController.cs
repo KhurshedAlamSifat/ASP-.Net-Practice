@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.DynamicData;
 using System.Web.Mvc;
 
 namespace MidAssignment.Controllers
@@ -52,9 +53,13 @@ namespace MidAssignment.Controllers
                               select s).SingleOrDefault();
             return View(restaurant);
         }
-        public ActionResult WorkHistory()
-        { 
-            return View(); 
+        public ActionResult WorkHistory(int id)
+        {
+            var st = (from s in db.RestaurantEmployees
+                      from s2 in db.Restaurants
+                      where s.EmployeeId == id && s2.Id == s.RestaurantId
+                      select s2).ToList();
+            return View(st);
         }
         public ActionResult Logout()
         {
