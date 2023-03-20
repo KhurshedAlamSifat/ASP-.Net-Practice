@@ -1,8 +1,12 @@
-﻿
+﻿@model IEnumerable<MidAssignment.EF.Models.Restaurant>
+
 @{
     ViewBag.Title = "Dashboard";
     Layout = "~/Views/Shared/Employee.cshtml";
 }
 
 <h2>Dashboard</h2>
-
+@if (TempData["Msg"] != null)
+{
+    <h1 class="alert @TempData["Color"]">@TempData["Msg"]</h1>
+}

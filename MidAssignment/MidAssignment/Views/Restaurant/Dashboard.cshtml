@@ -5,4 +5,17 @@
 
 
 <h2>Dashboard</h2>
+@if (TempData["Msg"] != null) { 
+    <h1 class="alert @TempData["Color"]">@TempData["Msg"]</h1>
+}
+<div align="center">
+    
+        <div class="form-group">
+            <label for="usr">Set time:</label>
+            <input type="text" class="form-control" name="settime" value="12:30AM">
+        </div>
+        <div class="form-group">
+            <a class="btn btn-success" href="/Restaurant/CollectRequest/1">Collect Request</a>
+        </div>
+</div>
 

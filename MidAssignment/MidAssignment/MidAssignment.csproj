@@ -141,6 +141,10 @@
     <Compile Include="Migrations\202303170751223_Relations.designer.cs">
       <DependentUpon>202303170751223_Relations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303201627358_adding time.cs" />
+    <Compile Include="Migrations\202303201627358_adding time.designer.cs">
+      <DependentUpon>202303201627358_adding time.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -181,10 +185,11 @@
     <Content Include="Views\Shared\Home.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Employee.cshtml" />
-    <Content Include="Views\Employee\Dashboard.cshtml" />
     <Content Include="Views\Employee\EmployeeProfile.cshtml" />
     <Content Include="Views\Employee\WorkHistory.cshtml" />
     <Content Include="Views\Restaurant\RestaurantProfile.cshtml" />
+    <Content Include="Views\Employee\Dashboard.cshtml" />
+    <Content Include="Views\Employee\SeeReq.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -205,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202303170751223_Relations.resx">
       <DependentUpon>202303170751223_Relations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303201627358_adding time.resx">
+      <DependentUpon>202303201627358_adding time.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

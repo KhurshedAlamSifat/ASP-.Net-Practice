@@ -83,3 +83,4 @@ C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\MidAssignment\MidAssignm
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\MidAssignment\MidAssignment\obj\Debug\MidAssignment.pdb
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\MidAssignment\MidAssignment\obj\Debug\MidAssignment.Migrations.Relations.resources
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\MidAssignment\MidAssignment\obj\Debug\MidAssignment.csproj.GenerateResource.cache
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\MidAssignment\MidAssignment\obj\Debug\MidAssignment.Migrations.addingtime.resources
