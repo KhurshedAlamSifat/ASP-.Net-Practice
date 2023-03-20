@@ -127,7 +127,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="EF\Models\Employee.cs" />
     <Compile Include="EF\Models\RestaurantEmployee.cs" />
     <Compile Include="EF\Models\Restaurant.cs" />
@@ -135,9 +137,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303170600553_RelationUpdate2.cs" />
-    <Compile Include="Migrations\202303170600553_RelationUpdate2.designer.cs">
-      <DependentUpon>202303170600553_RelationUpdate2.cs</DependentUpon>
+    <Compile Include="Migrations\202303170751223_Relations.cs" />
+    <Compile Include="Migrations\202303170751223_Relations.designer.cs">
+      <DependentUpon>202303170751223_Relations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,9 +177,14 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Restaurant\Dashboard.cshtml" />
+    <Content Include="Views\Shared\Home.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Employee.cshtml" />
+    <Content Include="Views\Employee\Dashboard.cshtml" />
+    <Content Include="Views\Employee\EmployeeProfile.cshtml" />
+    <Content Include="Views\Employee\WorkHistory.cshtml" />
+    <Content Include="Views\Restaurant\RestaurantProfile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -196,8 +203,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303170600553_RelationUpdate2.resx">
-      <DependentUpon>202303170600553_RelationUpdate2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303170751223_Relations.resx">
+      <DependentUpon>202303170751223_Relations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

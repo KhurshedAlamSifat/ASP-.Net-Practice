@@ -7,13 +7,13 @@ namespace MidAssignment.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class RelationUpdate2 : IMigrationMetadata
+    public sealed partial class Relations : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RelationUpdate2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Relations));
         
         string IMigrationMetadata.Id
         {
-            get { return "202303170600553_RelationUpdate2"; }
+            get { return "202303170751223_Relations"; }
         }
         
         string IMigrationMetadata.Source
