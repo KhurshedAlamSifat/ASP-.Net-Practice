@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_DataPassing", "API_DataPassing\API_DataPassing.csproj", "{AD11C869-ABCE-4ED1-80B7-C71587C14200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD11C869-ABCE-4ED1-80B7-C71587C14200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD11C869-ABCE-4ED1-80B7-C71587C14200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD11C869-ABCE-4ED1-80B7-C71587C14200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD11C869-ABCE-4ED1-80B7-C71587C14200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38E47493-E902-403C-BE4E-0AFFA6D28A3D}
+	EndGlobalSection
+EndGlobal
