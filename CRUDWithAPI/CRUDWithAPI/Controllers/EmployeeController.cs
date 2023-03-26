@@ -54,5 +54,28 @@ namespace CRUDWithAPI.Controllers
             }
             
         }
+        [HttpPost]
+        [Route("api/employees/update")]
+        public HttpResponseMessage UpdateEmployee(Employee employee)
+        {
+            APICRUD db = new APICRUD();
+            var emp = db.Employees.Find(employee.Id);
+
+            if (emp != null)
+            {
+                try
+                {
+                    db.Entry(emp).CurrentValues.SetValues(employee);
+                    db.SaveChanges();
+                    return Request.CreateResponse(HttpStatusCode.Accepted, "Updated");
+                }
+                catch(Exception ex)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+                }
+            }
+            return Request.CreateResponse(HttpStatusCode.NotFound, "Employee not founded");
+
+        }
     }
 }
