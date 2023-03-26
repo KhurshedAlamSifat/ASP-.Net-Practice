@@ -71,3 +71,4 @@ C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\CRUDWithAPI\CRUDWithAPI\
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\CRUDWithAPI\CRUDWithAPI\obj\Debug\CRUDWithAPI.pdb
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\CRUDWithAPI\CRUDWithAPI\obj\Debug\CRUDWithAPI.Migrations.CreateDatabase.resources
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\CRUDWithAPI\CRUDWithAPI\obj\Debug\CRUDWithAPI.csproj.GenerateResource.cache
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\CRUDWithAPI\CRUDWithAPI\obj\Debug\CRUDWithAPI.Migrations.InsertSeed.resources

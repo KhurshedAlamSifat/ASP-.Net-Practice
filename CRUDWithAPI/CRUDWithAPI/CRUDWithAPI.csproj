@@ -102,6 +102,10 @@
     <Compile Include="Migrations\202303241136307_Create Database.designer.cs">
       <DependentUpon>202303241136307_Create Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303260942512_InsertSeed.cs" />
+    <Compile Include="Migrations\202303260942512_InsertSeed.designer.cs">
+      <DependentUpon>202303260942512_InsertSeed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -120,6 +124,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202303241136307_Create Database.resx">
       <DependentUpon>202303241136307_Create Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303260942512_InsertSeed.resx">
+      <DependentUpon>202303260942512_InsertSeed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

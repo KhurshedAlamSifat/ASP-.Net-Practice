@@ -14,10 +14,13 @@
 
         protected override void Seed(CRUDWithAPI.EF.APICRUD context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+            context.Employees.AddOrUpdate(
+                c => c.Id,
+                new EF.Models.Employee { Name = "Sifat", Salary = 40000 },
+                new EF.Models.Employee { Name = "Mugdho", Salary = 20500 },
+                new EF.Models.Employee { Name = "Ahsan", Salary = 32000 },
+                new EF.Models.Employee { Name = "Mahfuz", Salary = 25000 }
+                );
         }
     }
 }
