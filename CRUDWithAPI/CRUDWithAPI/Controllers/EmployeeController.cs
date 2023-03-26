@@ -50,7 +50,7 @@ namespace CRUDWithAPI.Controllers
             }
             catch(Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, ex);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
             }
             
         }
@@ -67,7 +67,7 @@ namespace CRUDWithAPI.Controllers
                 {
                     db.Entry(emp).CurrentValues.SetValues(employee);
                     db.SaveChanges();
-                    return Request.CreateResponse(HttpStatusCode.Accepted, "Updated");
+                    return Request.CreateResponse(HttpStatusCode.OK, "Updated");
                 }
                 catch(Exception ex)
                 {
@@ -76,6 +76,28 @@ namespace CRUDWithAPI.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.NotFound, "Employee not founded");
 
+        }
+        [HttpPost]
+        [Route("api/employees/delete")]
+        public HttpResponseMessage DeleteEmployee(Employee employee)
+        {
+            APICRUD db = new APICRUD();
+            var emp = db.Employees.Find(employee.Id);
+
+            if (emp != null)
+            {
+                try
+                {
+                    db.Employees.Remove(emp);
+                    db.SaveChanges();
+                    return Request.CreateResponse(HttpStatusCode.OK, "Deleted");
+                }
+                catch(Exception ex)
+                {
+                    return Request.CreateResponse (HttpStatusCode.BadRequest, ex.Message);
+                }
+            }
+            return Request.CreateResponse(HttpStatusCode.NotFound, "Not found any employee of delete");
         }
     }
 }
