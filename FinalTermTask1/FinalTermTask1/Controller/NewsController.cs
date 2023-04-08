@@ -39,5 +39,22 @@ namespace FinalTermTask1.Controller
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
+        [HttpPost]
+        [Route("api/news/update")]
+        public HttpResponseMessage UpdateNews(NewsDTO news)
+        {
+            {
+                try
+                {
+                    var data = NewsService.Update(news);
+                    return Request.CreateResponse(HttpStatusCode.OK, "Updated");
+                }
+                catch (Exception ex)
+                {
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+                }
+            }
+
+        }
     }
 }
