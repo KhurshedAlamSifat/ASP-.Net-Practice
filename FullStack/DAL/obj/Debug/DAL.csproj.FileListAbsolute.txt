@@ -10,3 +10,5 @@ C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\DAL.dll
 C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\DAL.pdb
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\DAL.Migrations.databaseadded.resources
+C:\Users\Khurshed Alam Sifat\Desktop\.Net\.Net Practice\FullStack\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
